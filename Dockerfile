@@ -27,6 +27,6 @@ COPY --from=builder go/bin/main .
 COPY ./config/config.yaml ./config/
 
 #expose port
-EXPOSE 9090
+EXPOSE 8080
 ENTRYPOINT ["./main"]
 

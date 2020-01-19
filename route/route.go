@@ -21,7 +21,7 @@ func Private(e *echo.Echo) {
 		Claims:     &model.UserClaims{},
 	}
 	g.Use(middleware.JWTWithConfig(JWTConfig))
-	g.POST("/user", handler.UpdateUser)
+	g.PUT("/user", handler.UpdateUser)
 }
 
 func Staff(e *echo.Echo) {
