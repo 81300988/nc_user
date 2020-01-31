@@ -8,5 +8,5 @@ spec:
         paths:
           - path: /api/student/v1/public/ingressTest
             backend:
-              serviceName: hahoang-svc
-              servicePort: 9090
+              serviceName: hahoangUser-svc
+              servicePort: 8080

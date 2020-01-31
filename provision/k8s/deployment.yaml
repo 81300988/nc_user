@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hahoang-student
+  name: hahoang-user
 spec:
   replicas: 1
   selector:
@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: contain
-          image: hoanghaihadocker/nc_student
+          image: hoanghaihadocker/nc_user
           ports:
-            - containerPort: 9090
+            - containerPort: 8080
               name: web
           resources:
             requests:
